@@ -14,7 +14,8 @@ void setup(){
   as7341.setATIME(358);
   as7341.setASTEP(999);
   as7341.setGain(AS7341_GAIN_256X);
-  as7341.setLEDCurrent(100);
+  
+  pinMode(5, OUTPUT);
 }
 
 
@@ -23,13 +24,13 @@ void loop() {
     char c = Serial.read();
     if (c == 'm'){
       msg = true;
-      as7341.enableLED(true);
+      digitalWrite(5, HIGH);
       while (msg) {
         measure();
         c = Serial.read();
         if (c == 's'){
           msg = false;
-          as7341.enableLED(false);
+          digitalWrite(5, LOW);
         }
       }
     }
