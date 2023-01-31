@@ -13,7 +13,7 @@ void setup(){
   }
   as7341.setATIME(358);
   as7341.setASTEP(999);
-  as7341.setGain(AS7341_GAIN_256X);
+  as7341.setGain(AS7341_GAIN_16X);
   
   pinMode(5, OUTPUT);
 }
