@@ -11,10 +11,11 @@ void setup(){
     Serial.println("No AS7341 found");
     while (1) {delay(10);}
   }
-  as7341.setATIME(358);
-  as7341.setASTEP(999);
-  as7341.setGain(AS7341_GAIN_256X);
-  as7341.setLEDCurrent(100);
+  as7341.setATIME(379);
+  as7341.setASTEP(1399);
+  as7341.setGain(AS7341_GAIN_4X);
+  
+  pinMode(5, OUTPUT);
 }
 
 
@@ -23,13 +24,13 @@ void loop() {
     char c = Serial.read();
     if (c == 'm'){
       msg = true;
-      as7341.enableLED(true);
+      digitalWrite(5, HIGH);
       while (msg) {
         measure();
         c = Serial.read();
         if (c == 's'){
           msg = false;
-          as7341.enableLED(false);
+          digitalWrite(5, LOW);
         }
       }
     }

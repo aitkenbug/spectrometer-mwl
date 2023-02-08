@@ -1,4 +1,4 @@
-# Spectrometer Logger v0.0.2
+# Spectrometer Logger v0.1.0
 # By Vicente Aitken at MWL, Universidad De Chile
 
 import os
@@ -8,7 +8,7 @@ from datetime import datetime
 import plotext as pltx
 import csv
 
-print('Spectrometer Logger v0.0.2')
+print('Spectrometer Logger v0.1.0')
 print('For Sample Spectrum Analisis\n')
 
 com = str(input('Choose your Arduino Port: '))
