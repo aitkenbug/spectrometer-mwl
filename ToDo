@@ -1,11 +1,13 @@
 To do List for Spectrometer Water Turbidity Sensor v1.0 
 
-1.- Testing with external power supply for the LEDs array
-3.- Desing and build power supply and actuator fot LEDs array
+1.- Testing with external power supply for the LEDs array				Done
+3.- Desing and build power supply and actuator for LEDs array
 2.- Desing instruments container with long light path
-3.- Test more colorant concentration scenarios
+3.- Test more colorant concentration scenarios						Done
 4.- Figure out how to show the sensors data
-5.- Make data ploting candidates
+5.- Make data ploting candidates							Done
 6.- Impruve sensors software for user accesibility and sensor parameters control
 7.- Define philosophiy of the sensor software and hardware for system integration
 8.- Board and container prototypes with waterproof elements to protect electronics 
+9.- Design and make black structure for achieving constant water level
+10.- Electronic "control" inside waterproof chamber
