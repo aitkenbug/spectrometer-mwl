@@ -11,9 +11,9 @@ void setup(){
     Serial.println("No AS7341 found");
     while (1) {delay(10);}
   }
-  as7341.setATIME(379);
-  as7341.setASTEP(1399);
-  as7341.setGain(AS7341_GAIN_4X);
+  as7341.setATIME(200);
+  as7341.setASTEP(999);
+  as7341.setGain(AS7341_GAIN_64X);
   
   pinMode(5, OUTPUT);
 }
